@@ -1,0 +1,262 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* sets width of desktop site */
+.site-container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+/* banner section */
+.banner {
+  height: 30rem;
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 25%;
+}
+
+.banner .site-container {
+  position: relative;
+  top: 1rem;
+}
+
+.header {
+  display:flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  font-size: 1rem;
+  background-color: cadetblue;
+  color: white;
+}
+
+.logo {
+  display:flex;
+}
+
+.header img {
+  padding-left: 2rem;
+  height: 1.5rem;
+}
+
+.header h1 {
+  padding-left: 1rem;
+}
+
+.header span {
+  padding-right: 2rem;
+}
+
+.mobile {
+  display:none;
+}
+
+/* banner text */
+
+.banner_text_container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10rem;
+  margin-right: -2rem;
+}
+
+.banner_text {
+  padding: 1.5rem 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  background-color: white;
+}
+
+/* service items */
+/* paper icon is narrower than the other two icons */
+.services .site-container {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  height: 8rem;
+  width: 5rem;
+  padding: 3rem 3rem;
+  text-align: center;
+}
+
+.item img{
+  width: 5rem;
+}
+
+.paper img {
+  width: 3.5rem;
+}
+
+/* contact section */
+
+.contact .site-container {
+  display:flex;
+  justify-content: center;
+}
+
+.business {
+  width: 35%;
+  padding: 0 2.5rem 5rem;
+}
+
+.business h2{
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: cadetblue;
+  color: white;
+}
+
+.business p {
+  padding-top: 1rem;
+}
+
+/* footer section */
+
+.footer {
+  height: 9.5rem;
+  background-color: azure;
+}
+
+.footer .site-container {
+  display:flex;
+}
+
+.footer img {
+  height: 1.5rem;
+  padding-left: 4rem;
+}
+
+.footer span {
+  padding-left: 1rem;
+}
+
+/* Tablet Settings */
+
+@media only screen and (max-width: 850px) {
+
+  .site-container {
+    width: 100%;
+  }
+  .banner .site-container {
+    position: static;
+  }
+
+  .banner {
+    height: 22rem;
+    background-position: 15%;
+  }
+
+  .banner_text_container {
+    margin-top: 8rem;
+    margin-right: 2rem;
+  }
+
+  .banner_text {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+
+}
+
+/* Mobile Setting */
+
+@media only screen and (max-width: 575px) {
+
+  .banner {
+    height: 17rem;
+    background-position: 5%;
+  }
+
+  .logo h1 {
+    display:none;
+  }
+
+  .desktop {
+    display:none
+  }
+
+  .mobile {
+    display: block;
+    padding-right: 2rem;
+  }
+
+  .banner_text_container {
+    display: block;
+    margin-top: 9rem;
+    width: 100%;
+  }
+
+  .banner_text {
+    padding: 1rem 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* service items */
+  /* stacked vertically and centered */
+  .services .site-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.77rem;
+  }
+
+  .item {
+    text-align: center;
+    padding: 0;
+  }
+
+  .item img{
+    width: 5rem;
+  }
+
+  .item h1 {
+    font-size: 0.77rem;
+  }
+
+  .paper img {
+    width: 3.5rem;
+  }
+
+  /* contact section */
+
+  .contact .site-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .business {
+    width: 100%;
+    padding: 0 2.5rem 5rem;
+  }
+
+  .business h2{
+    width: 100%;
+    padding: 0.5rem 1.25rem;
+    text-align: center;
+  }
+
+  .business p {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    font-size: 0.77rem;
+  }
+
+  .footer .site-container {
+    display:flex;
+    justify-content: center;
+  }
+
+  .footer span {
+    display:none;
+  }
+}
